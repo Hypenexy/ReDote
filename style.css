@@ -15,18 +15,23 @@ body{margin:0; padding: 0; background: #fff;}
 }
 
 .sidebar img {
+    display: block;
     padding: 8px;
     border-radius: 5px;
-    filter: invert(25%) sepia(2%) saturate(30%) hue-rotate(314deg) brightness(82%) contrast(83%);
+    filter: invert(45%) sepia(0%) saturate(0%) brightness(82%) contrast(83%);
     cursor: pointer;
     width: 48px;
+    margin-bottom: 7px;
 }
 .sidebar img:hover {
     background: #bbbbbb33;
-    filter: none;
 }
 
 .activescreen{
     width: calc(100vw - 97px);
     height: 100%;
+}
+
+.activescreen div{
+    display: none;
 }
