@@ -10,13 +10,23 @@ body{margin:0; padding: 0; background: #fff;}
 }
 
 .sidebar{
-    color: white;
-    background: #00000022;
-    width: 64px;
-    height: 100%;
+    background: #a7cbd128;
+    padding: 8px;
+}
+
+.sidebar img {
+    padding: 8px;
+    border-radius: 5px;
+    filter: invert(25%) sepia(2%) saturate(30%) hue-rotate(314deg) brightness(82%) contrast(83%);
+    cursor: pointer;
+    width: 48px;
+}
+.sidebar img:hover {
+    background: #bbbbbb33;
+    filter: none;
 }
 
 .activescreen{
-    width: calc(100vw - 64px);
+    width: calc(100vw - 97px);
     height: 100%;
 }
