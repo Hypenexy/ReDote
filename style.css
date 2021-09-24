@@ -1,0 +1,22 @@
+*{font-family: 'Roboto', sans-serif;}
+/* html{height: -webkit-fill-available} */
+body{margin:0; padding: 0; background: #fff;}
+
+.window {
+    display: inline-flex;
+    height: 100vh;
+    /* min-height: 100vh;
+    min-height: -webkit-fill-available; */
+}
+
+.sidebar{
+    color: white;
+    background: #00000022;
+    width: 64px;
+    height: 100%;
+}
+
+.activescreen{
+    width: calc(100vw - 64px);
+    height: 100%;
+}
