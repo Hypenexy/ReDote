@@ -13,12 +13,11 @@ function RefreshStats(){
 
 function RefreshProcesses(){
   if(processes.style.display == "block"){
-    //could this be optimized?
+    //could this be optimized? It cannot refresh :/
     var _ = require('lodash');
     var ps = require('current-processes');
     
     ps.get(function(err, processes) {
-      console.log(processes[2])
       processes.forEach(el => {
         processesgui.innerHTML += `<div><ti>${el.name}</ti><cp>${el.cpu}%</cp><me>${el.mem.usage.toFixed(2)}%</me></div>`
       });
@@ -34,4 +33,7 @@ window.onload = function(){
   setInterval(function () {
     RefreshStats()
   }, 1000);
+  // setInterval(function () {
+  //   RefreshProcesses()
+  // }, 5000);
 }

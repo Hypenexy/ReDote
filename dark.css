@@ -1,0 +1,23 @@
+body{color: #fff;background: #111;}
+
+::-webkit-scrollbar-track{background:none}
+
+.sidebar img {
+    filter: invert(415%) sepia(0%) saturate(0%) brightness(182%) contrast(813%);
+}
+
+.sidebar img:hover {
+    background: #bbbbbb33;
+}
+.stat{
+    box-shadow: none;
+    background-color: #444466;
+}
+.stat ti, .stat ex{
+    color: #bbb
+}
+
+#processesgui div{
+    border: 1px solid #ddd;
+    background: none;
+}

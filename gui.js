@@ -22,3 +22,35 @@ function hideactiveloop(e) {
 }
 
 openside("processes");
+
+
+function darktheme(){
+    var head  = document.getElementsByTagName('head')[0];
+    var link  = document.createElement('link');
+    link.id   = 'darkcss';
+    link.rel  = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'dark.css';
+    link.media = 'all';
+    head.appendChild(link);
+    localStorage.setItem("darkmode", true)
+}
+
+function undarktheme(){
+    document.getElementById("darkcss").remove()
+    localStorage.removeItem("darkmode")
+}
+
+togglestyle.onclick = function(){
+    if(localStorage.getItem("darkmode")){
+        undarktheme()
+    }
+    else{
+        darktheme()
+    }
+}
+
+
+if(localStorage.getItem("darkmode")){
+    darktheme()
+}

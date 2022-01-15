@@ -4,8 +4,7 @@ html,body{height: 100%;}
 body{margin:0; padding: 0; background: #fff;}
 
 ::-webkit-scrollbar{width:12px}
-::-webkit-scrollbar-track{
-    border: 1px solid #ddd;border-radius:8px;background:#f0f0ff}
+::-webkit-scrollbar-track{border: 1px solid #ddd;border-radius:8px;background:#f0f0ff}
 ::-webkit-scrollbar-thumb{border-radius:8px;background:#aaa}
 ::-webkit-scrollbar-thumb:hover{background:#777}
 ::-webkit-scrollbar-thumb:active{background:#444}
@@ -82,7 +81,8 @@ body{margin:0; padding: 0; background: #fff;}
 
 #processesgui{
     position: fixed;
-    width: calc(100% - 100px);
+    margin-left: 20px;
+    width: calc(100% - 120px);
     height: calc(100% - 180px);
     overflow-y: scroll;
 }
@@ -105,7 +105,7 @@ body{margin:0; padding: 0; background: #fff;}
     width: 8%;
 }
 .divimitate{
-    margin: 0 6px;
+    margin-left: 24px;
 }
 .divimitate ti{
     width: calc(25% - 30px);
