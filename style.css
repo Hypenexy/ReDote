@@ -1,10 +1,11 @@
-*{font-family: 'Roboto', sans-serif;}
+*{box-sizing: border-box;margin: 0;font-family: 'Roboto', sans-serif}
 /* html{height: -webkit-fill-available} */
+html,body{height: 100%;}
 body{margin:0; padding: 0; background: #fff;}
 
 .window {
     display: inline-flex;
-    height: 100vh;
+    height: 100%;
     /* min-height: 100vh;
     min-height: -webkit-fill-available; */
 }
@@ -20,7 +21,7 @@ body{margin:0; padding: 0; background: #fff;}
     border-radius: 5px;
     filter: invert(45%) sepia(0%) saturate(0%) brightness(82%) contrast(83%);
     cursor: pointer;
-    width: 48px;
+    width: 64px;
     margin-bottom: 7px;
 }
 .sidebar img:hover {

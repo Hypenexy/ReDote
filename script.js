@@ -1,14 +1,18 @@
-const processesbtn = document.getElementById("processesbtn");
-const processes = document.getElementById("processes");
-const networkbtn = document.getElementById("networkbtn");
-const network = document.getElementById("network");
+var processesbtn = document.getElementById("processesbtn");
+var processes = document.getElementById("processes");
+var networkbtn = document.getElementById("networkbtn");
+var network = document.getElementById("network");
 
 const panels = ["processes", "network"];
 
-okey.onclick = open("processes");
-okey.onclick = open("network");
+//document.getElementById("networkbtn").addEventListener("click", openside("network"));
+//document.getElementById("processesbtn").addEventListener("click", openside("processes"));
 
-function open(n){
+
+processesbtn.onclick = function() {openside("processes")};
+networkbtn.onclick = function() {openside("network")};
+
+function openside(n){
   panels.forEach(hideactiveloop);
   document.getElementById(n + "btn").style.filter = "none";
   document.getElementById(n).style.display = "block";
