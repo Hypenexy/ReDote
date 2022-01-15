@@ -3,6 +3,22 @@
 html,body{height: 100%;}
 body{margin:0; padding: 0; background: #fff;}
 
+::-webkit-scrollbar{width:12px}
+::-webkit-scrollbar-track{
+    border: 1px solid #ddd;border-radius:8px;background:#f0f0ff}
+::-webkit-scrollbar-thumb{border-radius:8px;background:#aaa}
+::-webkit-scrollbar-thumb:hover{background:#777}
+::-webkit-scrollbar-thumb:active{background:#444}
+
+::selection {
+  color: #fff;
+  background: #333377;
+}
+
+.hidden{
+    display: none;
+}
+
 .window {
     display: inline-flex;
     height: 100%;
@@ -11,11 +27,14 @@ body{margin:0; padding: 0; background: #fff;}
 }
 
 .sidebar{
+    text-align: center;
+    font-size: 10px;
     background: #a7cbd128;
     padding: 8px;
 }
 
 .sidebar img {
+    user-select: none;
     display: block;
     padding: 8px;
     border-radius: 5px;
@@ -29,10 +48,65 @@ body{margin:0; padding: 0; background: #fff;}
 }
 
 .activescreen{
-    width: calc(100vw - 97px);
+    width: calc(100vw - 80px);
     height: 100%;
 }
 
-.activescreen div{
-    display: none;
+.stat{
+    user-select: none;
+    position: relative;
+    display: inline-block;
+    min-width: 140px;
+    height: 100px;
+    padding: 20px;
+    margin: 20px;
+    margin-right: 0;
+    /* border: 1px solid #444; */
+    box-shadow: 0 1px 4px #444466;
+    border-radius: 12px;
+    background-color: #f0f0ff;
+    font-size: 24px;
+    text-align: center;
+}
+.stat ti{
+    display: block;
+    font-size: 14px;
+    color: #444
+}
+.stat ex{
+    position: absolute;
+    display: block;
+    font-size: 16px;
+    color: #444
+}
+
+#processesgui{
+    position: fixed;
+    width: calc(100% - 100px);
+    height: calc(100% - 180px);
+    overflow-y: scroll;
+}
+#processesgui div{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f0f0ff;
+    margin: 6px;
+    padding: 12px;
+}
+.processesgui ti{
+    display: inline-block;
+    width: 25%;
+    min-width: 250px;
+}
+.processesgui cp{
+    display: inline-block;
+    margin-right: 20px;
+    min-width: 80px;
+    width: 8%;
+}
+.divimitate{
+    margin: 0 6px;
+}
+.divimitate ti{
+    width: calc(25% - 30px);
 }

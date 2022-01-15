@@ -3,16 +3,17 @@ const { app, BrowserWindow } = require('electron')
 const path = require('path')
 
 var win;
-//const loadingEvents = new EventEmitter()
+// const loadingEvents = new EventEmitter()
 function createWindow () {
 	win = new BrowserWindow({
-		/*webPreferences: {
+		webPreferences: {
 			nodeIntegration: true,
 			worldSafeExecuteJavaScript: true,
 			contextIsolation: true,
-			preload: path.join(__dirname, "electronevents.js")
-		},*/
+			preload: path.join(__dirname, "dote.js")
+		},
 		width: 1146,
+		minWidth: 600,
 		height: 633,
 		backgroundColor: '#000',
 		icon: __dirname + '/rd.png'
@@ -24,7 +25,7 @@ function createWindow () {
 	win.once('ready-to-show', () => {
 		win.show();
 	});
-	  
+
 }
 
 

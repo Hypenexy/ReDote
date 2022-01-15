@@ -5,10 +5,6 @@ var network = document.getElementById("network");
 
 const panels = ["processes", "network"];
 
-//document.getElementById("networkbtn").addEventListener("click", openside("network"));
-//document.getElementById("processesbtn").addEventListener("click", openside("processes"));
-
-
 processesbtn.onclick = function() {openside("processes")};
 networkbtn.onclick = function() {openside("network")};
 
@@ -25,5 +21,4 @@ function hideactiveloop(e) {
   }
 }
 
-
-//open("processes");
+openside("processes");

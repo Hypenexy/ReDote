@@ -4,26 +4,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
   <title>ReDote</title>
-  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="window">
     <div class="sidebar">
-      <img id="processesbtn" src="cpu.png">
-      <img id="networkbtn" src="network.png">
+      <a><img id="processesbtn" src="cpu.png"><!-- Processes --></a>
+      <a><img id="networkbtn" src="network.png"><!-- Network --></a>
     </div>
     <div class="activescreen">
-      <div id="processes">
-        <h1>1</h1>
+      <div class="hidden" id="processes">
+        <div class="stat" id="cpuusage"></div><div class="stat" id="memusage"></div><div class="stat" id="processeslisted"></div>
+        <div class="processesgui divimitate"><ti>Name</ti><cp>CPU Usage</cp><me>Memory Usage</me></div>
+        <div class="processesgui" id="processesgui">
+        </div>
       </div>
-      <div id="network">
+      <div class="hidden" id="network">
         <h1>2</h1>
       </div>
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="gui.js"></script>
 </body>
 </html>
