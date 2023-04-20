@@ -12,11 +12,17 @@ function createWindow () {
 			contextIsolation: true,
 			preload: path.join(__dirname, "dote.js")
 		},
+		titleBarStyle: 'hidden',
+		titleBarOverlay: {
+		  color: '#111',
+		  symbolColor: '#c8c8c8',
+		  height: 30
+		},
 		width: 1146,
 		minWidth: 600,
 		height: 633,
 		backgroundColor: '#000',
-		icon: __dirname + '/rd.png'
+		icon: __dirname + '/logoProposition1.png'
 	})
 	//win.removeMenu()
 	  
